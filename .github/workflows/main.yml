@@ -1,0 +1,13 @@
+name: Hola Mundo
+
+on: [push]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v3
+
+      - name: Imprimir mensaje
+        run: echo "Hola mundo"
